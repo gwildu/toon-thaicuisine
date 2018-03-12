@@ -2,7 +2,7 @@
   <section class="container">
     <div>
       <h1 class="title">
-        toon-thaicuisine
+        toon's thaicuisine
       </h1>
       <h2 class="subtitle">
         a food blog
@@ -22,13 +22,14 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 100vw;
 }
 
 .title {
@@ -38,6 +39,11 @@ export default {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+  margin-bottom: 20px;
+  @media (max-width: 600px) {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
 }
 
 .subtitle {
@@ -46,6 +52,9 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
 }
 
 .links {
