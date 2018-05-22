@@ -13,11 +13,14 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "flamelink": "^0.14.1",
+    "gwi-vue-components": "^0.2.2",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
+    "eslint-config-vue": "^2.0.2",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
