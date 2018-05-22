@@ -1,29 +1,35 @@
 <template>
-  <section class="container">
+  <section class="wide-container">
     <div>
-      <h1 class="title">
-        toon's thaicuisine
-      </h1>
-      <h2 class="subtitle">
-        a food blog
-      </h2>
-      <p>comming soon...</p>
+      <Heading
+        markup-level="1"
+        styling-level="1"
+      >toon's thaicuisine</Heading>
+      <Heading
+        markup-level="2"
+        styling-level="4"
+      >
+        ein Food Blog für Fans der Thailändischen Küche
+      </Heading>
+      <Posts />
     </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+  import Heading from 'gwi-vue-components/GwiHeading/index.vue'
+  import Posts from '~/components/Posts.vue'
 
-export default {
+  export default {
   components: {
-    AppLogo
+    Posts,
+    Heading
   }
 }
 </script>
 
-<style lang="scss">
-.container {
+<style lang="scss" scoped>
+.wide-container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -35,7 +41,7 @@ export default {
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
-  font-weight: 300;
+  //font-weight: 300;
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
